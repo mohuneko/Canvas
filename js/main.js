@@ -80,6 +80,94 @@
     // ctx.lineCap = 'round'; //終端が丸くなる
     // ctx.stroke();
 
+    //円弧
+    // ctx.beginPath();
+    // //ctx.arc(x, y, start, end);
+    // ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+    // ctx.stroke();
+
+    // ctx.beginPath();
+    // //ctx.arc(x, y, start, end);
+    // // ctx.arc(100, 100, 50, 0, 300 / 360 * 2 * Math.PI);
+    // // ctx.arc(100, 100, 50, 0, 300 / 180 * Math.PI);
+    // ctx.moveTo(100, 100);
+    // ctx.arc(100, 100, 50, 0, 300 / 180 * Math.PI, true);
+    // // ctx.stroke();
+    // ctx.fill();
+
+    //楕円
+    //ctx.ellipse(x, y, rx, ry, rotation, start, end);
+    // ctx.ellipse(100, 100, 50, 30, 0, 0, 2 * Math.PI);
+    // ctx.rect(50, 50, 50, 50);
+    // ctx.stroke();
+
+    //テキストを描画する
+
+    // ctx.beginPath();
+    // ctx.moveTo(0, 100);
+    // ctx.lineTo(canvas.width, 100);
+    // ctx.moveTo(100, 0);
+    // ctx.lineTo(100, canvas.height);
+    // ctx.stroke();
+
+    // ctx.font = 'bold 64px Verdana';
+    // ctx.textAlign = 'right';
+    // ctx.textBaseline = 'top';
+
+    // // ctx.fillText('Tokyo', 100, 100);
+    // // ctx.fillText('Tokyo', 100, 100, 100);
+    // ctx.strokeText('Tokyo', 100, 100, 100);
+
+    //画像を描画する
+    // const img = document.createElement('img');
+    // // img.src = 'img/logo.png';
+    // img.src = 'img/sprite.png';
+
+    // img.addEventListener('load', () => {
+      // ctx.drawImage(img, 0, 0);
+      // ctx.drawImage(img, 0, 0, 40, 40);
+      // // const pattern = ctx.createPattern(img, 'repeat');
+      // // repeat-x, repeat-y, no-repeat
+      // const pattern = ctx.createPattern(img, 'repeat-x');
+      // ctx.fillStyle = pattern;
+      // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // ctx.drawImage(img, 0, 0);
+    //   ctx.drawImage(
+    //     img,
+    //     // sx, sy, sw, sh,
+    //     70 * 2, 70, 70, 70,
+    //     // dx, dy, dw, ds
+    //     0, 0, 35, 35
+    //   );
+    // });
+
+    //キャラクタを描いてみよう
+
+    ctx.beginPath();
+    ctx.ellipse(100, 100, 40, 30, 0, 0, 2 * Math.PI);
+    ctx.fillStyle = 'black';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.ellipse(80, 100, 8, 8, 0, 0, 2 * Math.PI);
+    ctx.ellipse(120, 100, 8, 8, 0, 0, 2 * Math.PI);
+    ctx.fillStyle = 'skyblue';
+    ctx.fill();
+
+    ctx.scale(0.5, 0.5);
+
+    ctx.beginPath();
+    ctx.ellipse(100, 100, 40, 30, 0, 0, 2 * Math.PI);
+    ctx.fillStyle = 'black';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.ellipse(80, 100, 8, 8, 0, 0, 2 * Math.PI);
+    ctx.ellipse(120, 100, 8, 8, 0, 0, 2 * Math.PI);
+    ctx.fillStyle = 'skyblue';
+    ctx.fill();
+
   }
 
   draw();
